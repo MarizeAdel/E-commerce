@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="login.html">Account</a></li>
+                       
+                     
+                </ul> 
+                
+            </nav>
+            <a href="shopping cart.html"><img src="images/cart.png" width="25px" height="25px"></a> 
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+ <!-- -----cart------->
+ <div class="smallcont cart-page">
+    <table>
+        <tr>
+            <th>product</th>
+            <th>Quantity</th>
+            <th>subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-1.jpg">
+                    <div>
+                        <p>Red t-shirt</p>
+                        <small>price:100L.E</small>
+                        <br>
+                        <a href="">remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>50le</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-2.jpg">
+                    <div>
+                        <p>Red t-shirt</p>
+                        <small>price:100L.E</small>
+                        <br>
+                        <a href="">remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>50le</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/buy-3.jpg">
+                    <div>
+                        <p>Red t-shirt</p>
+                        <small>price:100L.E</small>
+                        <br>
+                        <a href="">remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>50le</td>
+        </tr>
+    </table>
+
+
+    <div class="totalp">
+        <table>
+            <tr>
+                <td>
+                    subtotal
+                </td>
+                <td> 200 L.E</td>
+            </tr>
+            <tr>
+                <td>
+                    tax
+                </td>
+                <td> 35 L.E</td>
+            </tr> 
+            <tr>
+            <td>
+                total
+            </td>
+            <td> 235 L.E</td>
+        </tr>
+        </table>
+    </div>
+ </div>
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>download pur app</h3>
+                <p>Download app from android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" >
+                    <img src="images/app-store.png" >
+                    
+                </div>
+            </div>  
+            <div class="footer-col-2">
+                <img src="images/logo-white.png" alt="">
+                <p>Our perpose is to sustainably
+                     make the pleaser and benefits 
+                    of sports accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>useful links</h3>
+            <ul>
+                <li>coupons</li>
+                <li>blog</li>
+                <li>return policy</li>
+                <li>join affiliate</li>
+            </ul>    
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+            <ul>
+                <li>facebook</li>
+                <li>twitter</li>
+                <li>instgram</li>
+                <li>youtube</li>
+            </ul>    
+            </div>
+        </div>
+        <hr>
+        <p class="cr">copyright 2020-my shop</p>
+    </div>
+</div>
+ 
+
+
+
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+    function menutoggle()
+    {
+        if(menuitems.style.maxHeight=="0px")
+        {
+            menuitems.style.maxHeight="200px";
+        }
+        else{
+            menuitems.style.maxHeight="0px";
+        }
+
+    }
+</script>
+</body>
+</html>

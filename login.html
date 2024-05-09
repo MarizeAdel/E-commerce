@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    
+                </ul>
+
+            </nav>
+            <a href="shopping cart.html"><img src="images/cart.png" width="25px" height="25px"></a> 
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+
+    <!------login------>
+    <div class="accpage">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col">
+                    <div class="form-cont">
+                        <div class="form-btn">
+                            <span onclick="login()">sign in</span>
+                            <span onclick="reg()">sign up</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="signin">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">log in</button>
+                            <a href="">forget password</a>
+                        </form>
+                        <form id="signup">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">sign up</button>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download pur app</h3>
+                    <p>Download app from android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our perpose is to sustainably
+                        make the pleaser and benefits
+                        of sports accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instgram</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="cr">copyright 2020-my shop</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+    <script>
+        var signin = document.getElementById("signin");
+        var signup = document.getElementById("signup");
+        var indicator = document.getElementById("indicator");
+
+        function reg() {
+            signin.style.transform = "translateX(0px)";
+            signup.style.transform = "translateX(0px)";
+            indicator.style.transform= "translateX(100px)";
+        }
+        function login() {
+            signin.style.transform = "translateX(300px)";
+            signup.style.transform = "translateX(300px)";
+            indicator.style.transform= "translateX(0px)";
+
+        }
+    </script>
+</body>
+
+</html>
